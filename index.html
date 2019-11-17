@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Personalized event recommendation system</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link href="css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+<div class="modal" id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+ 
+      <div class="modal-body">
+      <div class="form">
+      
+      <ul class="tab-group">
+        <li class="tab active"><a href="#signup">Sign Up</a></li>
+        <li class="tab"><a href="#login">Log In</a></li>
+      </ul>
+      
+      <div class="tab-content">
+        <div id="signup">   
+          <h1>Sign Up for Free</h1>
+          
+          <form action="/" method="post">
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                First Name<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" />
+            </div>
+        
+            <div class="field-wrap">
+              <label>
+                Last Name<span class="req">*</span>
+              </label>
+              <input type="text"required autocomplete="off"/>
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Set A Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <button type="submit" class="button button-block"/>Get Started</button>
+          
+          </form>
+
+        </div>
+        
+        <div id="login">   
+          <h1>Welcome Back!</h1>
+          
+          <form action="/" method="post">
+          
+            <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <p class="forgot"><a href="#">Forgot Password?</a></p>
+          
+          <button class="button button-block"/>Log In</button>
+          
+          </form>
+
+        </div>
+        
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
+      </div>
+   
+  </div>
+</div>
+</div>
+
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <div class="site-logo"><a href="index.html">PERS<span>.</span> </a></div>
+          <div class="ml-auto">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="#home-section" class="nav-link">Home</a></li>
+                <li><a href="#classes-section" class="nav-link">Explore</a></li>
+                <li><a href="" class="nav-link" data-toggle="modal" data-target="#myModal"  >Login/Signup</a></li>
+              </ul>
+            </nav>
+            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a>
+          </div>
+
+        </div>
+      </div>
+
+    </header>
+
+    <a id="bgndVideo" class="player"
+      data-property="{videoURL:'https://www.youtube.com/watch?v=_phLRaIStDw',showYTLogo:false, showAnnotations: false, showControls: false, cc_load_policy: false, containment:'#home-section',autoPlay:true, mute:true, startAt:1, stopAt: 20, opacity:1}">
+    </a>   
+
+    <div class="intro-section" id="home-section" style="background-color: #ccc;">
+      <div class="container">
+
+        <div class="row align-items-center">
+          <div class="col-lg-12 mx-auto text-center" data-aos="fade-up">
+            <h1 class="mb-3">Personalized Event Recommendation System</h1>
+            <p class="lead mx-auto desc mb-5">Find the Social event that fits for you</p>
+          
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+ 
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-md-8 section-heading">
+            <h2 class="heading mb-3">Top Trending Events</h2>
+
+          </div>
+        </div>
+
+        <!-- Slider -->
+        <div class="owl-carousel nonloop-block-14 block-14" data-aos="fade">
+         <div class="slide">
+            <div class="ftco-feature-1">
+              <span>
+              	<img src="./images/ic2.jpeg" class="img-circle" alt="Cinque Terre">
+              </span>
+              <div class="ftco-feature-1-text">
+                <h2>DevFest Lahore 2019</h2>
+                <p>DevFest is the only large-scale developers conference in Pakistan that brings a hybrid of talks, workshops and codelabs</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="ftco-feature-1">
+              <span>
+              	<img src="./images/ic1.jpeg" class="img-circle" alt="Cinque Terre">
+              </span>
+              <div class="ftco-feature-1-text">
+                <h2>Sukhan Live | Sophiya Anjam</h2>
+                <p>For the third session of Sukhan Live, we are honored to host the extremely talented and versatile Sophiya Anjam- RJ Sophie.</p>
+              </div>
+            </div>
+          </div>
+
+
+        <div class="slide">
+            <div class="ftco-feature-1">
+              <span>
+              	<img src="./images/ic2.jpeg" class="img-circle" alt="Cinque Terre">
+              </span>
+              <div class="ftco-feature-1-text">
+                <h2>DevFest Lahore 2019</h2>
+                <p>DevFest is the only large-scale developers conference in Pakistan that brings a hybrid of talks, workshops and codelabs</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="ftco-feature-1">
+              <span>
+              	<img src="./images/ic1.jpeg" class="img-circle" alt="Cinque Terre">
+              </span>
+              <div class="ftco-feature-1-text">
+                <h2>Sukhan Live | Sophiya Anjam</h2>
+                <p>For the third session of Sukhan Live, we are honored to host the extremely talented and versatile Sophiya Anjam- RJ Sophie.</p>
+              </div>
+            </div>
+          </div>
+
+          
+         
+      </div>
+    </div>
+    
+    <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-md-8 section-heading">
+            <h2 class="heading mb-3 mt-5">Personalized Events</h2>
+          </div>
+        </div>
+
+        <!-- Slider -->
+        <div class="owl-carousel nonloop-block-14 block-14" data-aos="fade">
+          <div class="slide">
+            <div class="ftco-feature-1">
+              <span>
+              	<img src="./images/ic2.jpeg" class="img-circle" alt="Cinque Terre">
+              </span>
+              <div class="ftco-feature-1-text">
+                <h2>DevFest Lahore 2019</h2>
+                <p>DevFest is the only large-scale developers conference in Pakistan that brings a hybrid of talks, workshops and codelabs</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="ftco-feature-1">
+              <span>
+              	<img src="./images/ic1.jpeg" class="img-circle" alt="Cinque Terre">
+              </span>
+              <div class="ftco-feature-1-text">
+                <h2>Sukhan Live | Sophiya Anjam</h2>
+                <p>For the third session of Sukhan Live, we are honored to host the extremely talented and versatile Sophiya Anjam- RJ Sophie.</p>
+              </div>
+            </div>
+          </div>
+
+
+        <div class="slide">
+            <div class="ftco-feature-1">
+              <span>
+              	<img src="./images/ic2.jpeg" class="img-circle" alt="Cinque Terre">
+              </span>
+              <div class="ftco-feature-1-text">
+                <h2>DevFest Lahore 2019</h2>
+                <p>DevFest is the only large-scale developers conference in Pakistan that brings a hybrid of talks, workshops and codelabs</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="ftco-feature-1">
+              <span>
+              	<img src="./images/ic1.jpeg" class="img-circle" alt="Cinque Terre">
+              </span>
+              <div class="ftco-feature-1-text">
+                <h2>Sukhan Live | Sophiya Anjam</h2>
+                <p>For the third session of Sukhan Live, we are honored to host the extremely talented and versatile Sophiya Anjam- RJ Sophie.</p>
+              </div>
+            </div>
+          </div>
+
+          
+         
+      </div>
+    </div>
+
+
+    <div class="site-section" id="classes-section">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-md-8  section-heading">
+            <span class="subheading"> Explore</span>
+            <h2 class="heading mb-3">Categories</h2>
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="class-item d-flex align-items-center">
+              <a href="single.html" class="class-item-thumbnail">
+                <img src="images/cat1.jpeg" alt="Image">
+              </a>
+              <div class="class-item-text">
+                <h2><a href="single.html">Tech</a></h2>
+              </div>
+            </div>
+
+            <div class="class-item d-flex align-items-center">
+              <a href="single.html" class="class-item-thumbnail">
+                <img src="images/cat2.jpeg" alt="Image">
+              </a>
+              <div class="class-item-text">
+                
+                <h2><a href="single.html">Fashion</a></h2>
+                <span>By Justin Daniel</span>,
+                <span>30 minutes</span>
+              </div>
+            </div>
+
+                     
+           
+          </div>
+          <div class="col-lg-6">
+            <div class="class-item d-flex align-items-center">
+              <a href="single.html" class="class-item-thumbnail">
+                <img src="images/cat1.jpeg" alt="Image">
+              </a>
+              <div class="class-item-text">
+                <h2><a href="single.html">Tech</a></h2>
+              </div>
+            </div>
+
+            <div class="class-item d-flex align-items-center">
+              <a href="single.html" class="class-item-thumbnail">
+                <img src="images/cat2.jpeg" alt="Image">
+              </a>
+              <div class="class-item-text">
+                
+                <h2><a href="single.html">Fashion</a></h2>
+                <span>By Justin Daniel</span>,
+                <span>30 minutes</span>
+              </div>
+            </div>
+
+                     
+           
+          </div>
+            
+            
+            
+         
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bgimg" style="background-image: url('images/bg_3.jpg');"  data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+          <div class="col-md-7">
+            <h2 class="">Every Step Counts</h2>
+            <p class="lead mx-auto desc mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ad, reprehenderit enim!
+               <a href="#" target="_blank">Get Started</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3 class="text-dark">About Stamina</h3>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          </div>
+
+          <div class="col-md-3 ml-auto">
+            <h3 class="text-dark">Links</h3>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Classes</a></li>
+              <li><a href="#">Schedule</a></li>
+              <li><a href="#">Trainer</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <h3 class="text-dark">Subscribe</h3>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+            </p>
+            <form action="#">
+              <div class="d-flex mb-5">
+                <input type="text" class="form-control rounded-0" placeholder="Email">
+                <input type="submit" class="btn btn-primary rounded-0" value="Subscribe">
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class=" pt-5">
+              <p class="copyright">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+
+
+  </div>
+  <!-- .site-wrap -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/jquery.mb.YTPlayer.min.js"></script>
+
+
+
+
+  <script src="js/main.js"></script>
+
+  <script type="text/javascript">
+  	
+  	$('.form').find('input, textarea').on('keyup blur focus', function (e) {
+  
+  var $this = $(this),
+      label = $this.prev('label');
+
+	  if (e.type === 'keyup') {
+			if ($this.val() === '') {
+          label.removeClass('active highlight');
+        } else {
+          label.addClass('active highlight');
+        }
+    } else if (e.type === 'blur') {
+    	if( $this.val() === '' ) {
+    		label.removeClass('active highlight'); 
+			} else {
+		    label.removeClass('highlight');   
+			}   
+    } else if (e.type === 'focus') {
+      
+      if( $this.val() === '' ) {
+    		label.removeClass('highlight'); 
+			} 
+      else if( $this.val() !== '' ) {
+		    label.addClass('highlight');
+			}
+    }
+
+});
+
+$('.tab a').on('click', function (e) {
+  
+  e.preventDefault();
+  
+  $(this).parent().addClass('active');
+  $(this).parent().siblings().removeClass('active');
+  
+  target = $(this).attr('href');
+
+  $('.tab-content > div').not(target).hide();
+  
+  $(target).fadeIn(600);
+  
+});
+  </script>
+
+</body>
+
+</html>
